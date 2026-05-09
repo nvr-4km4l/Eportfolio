@@ -1,0 +1,161 @@
+import React from 'react';
+import './App.css'; // Pastikan anda pindahkan CSS anda ke fail ini
+
+const Portfolio = () => {
+  return (
+    <div className="portfolio-wrapper">
+      {/* Header Section */}
+      <header>
+        <div className="container profile-container">
+          <img 
+            src="https://via.placeholder.com/180" 
+            alt="Profil Saya" 
+            className="profile-img" 
+          />
+          <h1>IT Support & Security Professional</h1>
+          <p className="tagline">
+            "Saya memposisikan diri sebagai profesional IT Support dengan fokus keselamatan yang kuat, 
+            menggabungkan kemahiran penyelesaian masalah teknikal dengan amalan keselamatan siber proaktif."
+          </p>
+        </div>
+      </header>
+
+      <div className="container">
+        {/* About Section */}
+        <section id="about">
+          <h2>Objektif Kerjaya</h2>
+          <div className="card">
+            <p>
+              Mendiagnosis dan menyelesaikan isu perkakasan, perisian, dan rangkaian sambil memberikan 
+              bantuan tepat pada masanya melalui sistem tiket. Pada masa yang sama, saya melaksanakan 
+              perlindungan titik akhir (endpoint protection) dan mendidik pengguna tentang amalan selamat 
+              (phishing awareness) untuk menyumbang kepada kecekapan operasi dan ketahanan organisasi.
+            </p>
+          </div>
+        </section>
+
+        {/* Technical Skills */}
+        <section id="skills">
+          <h2>Kemahiran Teknikal Teras</h2>
+          <div className="grid">
+            <div className="skill-item">
+              <i className="fas fa-desktop"></i>
+              <span>OS Admin: Windows, Linux, macOS</span>
+            </div>
+            <div className="skill-item">
+              <i className="fas fa-network-wired"></i>
+              <span>Networking: TCP/IP, DNS, VPN, Firewalls</span>
+            </div>
+            <div className="skill-item">
+              <i className="fas fa-shield-alt"></i>
+              <span>Security: Antivirus, IDS/IPS, Endpoint Security</span>
+            </div>
+            <div className="skill-item">
+              <i className="fas fa-tools"></i>
+              <span>Troubleshooting & Log Analysis</span>
+            </div>
+          </div>
+        </section>
+
+        {/* Skill Gap & Action Plan */}
+        <section id="action-plan">
+          <h2>Pelan Tindakan & Pembangunan Diri</h2>
+          <div className="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Bidang Kemahiran</th>
+                  <th>Kemahiran Semasa</th>
+                  <th>Keperluan Industri</th>
+                  <th>Pelan Tindakan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Networking</td>
+                  <td>Basic TCP/IP, DNS, VPN</td>
+                  <td>Advanced Firewalls, IDS/IPS, Routing</td>
+                  <td>Ambil sijil CCNA / CompTIA Network+</td>
+                </tr>
+                <tr>
+                  <td>Operating Systems</td>
+                  <td>Windows & Linux Basics</td>
+                  <td>System Admin & Security Hardening</td>
+                  <td>Kursus Microsoft Certified / Linux+</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* Tools Used */}
+        <section id="tools">
+          <h2>Alatan (Tools) & Pemantauan</h2>
+          <div className="grid">
+            <div className="card">
+              <i className="fas fa-search-plus" style={{ color: '#0076CE' }}></i>
+              <h3>Wireshark</h3>
+              <p>Analisis paket dan penyelesaian masalah rangkaian secara mendalam.</p>
+            </div>
+            <div className="card">
+              <i className="fas fa-chart-line" style={{ color: '#0076CE' }}></i>
+              <h3>Prometheus & Grafana</h3>
+              <p>Visualisasi metrik sistem dan pemantauan prestasi dalam masa nyata.</p>
+            </div>
+            <div className="card">
+              <i className="fas fa-satellite-dish" style={{ color: '#0076CE' }}></i>
+              <h3>Paessler PRTG</h3>
+              <p>Pemantauan rangkaian komprehensif untuk persekitaran Windows.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Certifications */}
+        <section id="certs">
+          <h2>Persijilan</h2>
+          <div className="card" style={{ textAlign: 'center' }}>
+            {['CompTIA A+', 'Google IT Support Professional', 'IBM IT Support', 'CompTIA Security+', 'Google Cybersecurity'].map((cert) => (
+              <span key={cert} className="cert-badge">{cert}</span>
+            ))}
+            <span className="cert-badge">Cisco CCNA Security (In Progress)</span>
+          </div>
+        </section>
+
+        {/* Career Timeline */}
+        <section id="timeline">
+          <h2>Halatuju Kerjaya (5 Tahun)</h2>
+          <div className="timeline">
+            <div className="timeline-item">
+              <strong>Tahun 1–2: Foundation</strong>
+              <p>Membina asas dengan Security+, Network+, dan penguasaan alatan (Wireshark, Grafana).</p>
+            </div>
+            <div className="timeline-item">
+              <strong>Tahun 3–4: Advancement</strong>
+              <p>Mendapatkan CCNA, AWS Security, dan pengalaman SIEM serta mula membimbing staf junior.</p>
+            </div>
+            <div className="timeline-item">
+              <strong>Tahun 5: Specialization</strong>
+              <p>Pakar sebagai IT Security Support Lead dengan sijil CEH (Certified Ethical Hacker).</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Dell */}
+        <section id="target">
+          <h2>Matlamat Kerjaya: Dell Cyberjaya</h2>
+          <div className="card" style={{ backgroundColor: '#e3f2fd', borderLeft: '5px solid #0076CE' }}>
+            <p>"Saya ingin berkhidmat di Dell Cyberjaya kerana komitmen mereka terhadap kecemerlangan operasi dan keselamatan siber..."</p>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <div className="container">
+          <p>&copy; 2024 IT Support & Security E-Portfolio | Hubungi Saya di [Alamat Emel Anda]</p>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default Portfolio;
