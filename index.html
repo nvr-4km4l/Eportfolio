@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio | IT Support & Security</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0076CE; /* Dell Blue */
+            --dark-color: #1a1a1a;
+            --light-bg: #f4f7f6;
+            --text-color: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        /* --- Header / Profile Section --- */
+        header {
+            background: linear-gradient(135deg, var(--dark-color) 0%, var(--primary-color) 100%);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+            border-bottom: 5px solid #005a9e;
+        }
+
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid var(--white);
+            object-fit: cover;
+            background-color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 10px 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        .tagline {
+            font-style: italic;
+            font-weight: 300;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* --- Section Styling --- */
+        section {
+            padding: 40px 0;
+        }
+
+        h2 {
+            border-left: 5px solid var(--primary-color);
+            padding-left: 15px;
+            color: var(--dark-color);
+            margin-bottom: 25px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        /* --- Skills & Tools Grid --- */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-item {
+            background: #eef2f7;
+            padding: 15px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .skill-item i {
+            margin-right: 15px;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+
+        /* --- Table Styling --- */
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background: var(--white);
+        }
+
+        table th, table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        table th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* --- Timeline --- */
+        .timeline {
+            border-left: 3px solid var(--primary-color);
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+
+        .timeline-item {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            width: 15px;
+            height: 15px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            position: absolute;
+            left: -30px;
+            top: 5px;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+
+        .cert-badge {
+            display: inline-block;
+            background: #27ae60;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container profile-container">
+            <!-- Insert your profile picture URL here -->
+            <img src="https://via.placeholder.com/180" alt="My Profile" class="profile-img">
+            <h1>IT Support & Security Professional</h1>
+            <p class="tagline">"I am positioning myself as an IT Support professional with a strong security focus, combining my technical troubleshooting skills with proactive cybersecurity practices to serve as the first line of defense against modern threats."</p>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- About Section -->
+        <section id="about">
+            <h2>Career Objective</h2>
+            <div class="card">
+                <p>I aim to diagnose and resolve hardware, software, and network issues while providing timely assistance to employees or clients through ticketing systems, remote support, or in-person help. Simultaneously, I implement endpoint protection measures such as antivirus, firewalls, and intrusion detection, educate users on safe practices like phishing awareness and password hygiene, and assist in incident response whenever malware or suspicious activity is detected.</p>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section id="skills">
+            <h2>Core Technical Skills</h2>
+            <div class="grid">
+                <div class="skill-item">
+                    <i class="fas fa-desktop"></i>
+                    <span>OS Admin: Windows, Linux, macOS</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-network-wired"></i>
+                    <span>Networking: TCP/IP, DNS, VPN, Firewalls</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Security: Antivirus, IDS/IPS, Endpoint Security</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-tools"></i>
+                    <span>Troubleshooting & Log Analysis</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skill Gap & Action Plan -->
+        <section id="action-plan">
+            <h2>Action Plan & Self-Development</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Skill Area</th>
+                            <th>Current Skills</th>
+                            <th>Industry Requirements</th>
+                            <th>Action Plan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Networking</td>
+                            <td>Basic TCP/IP, DNS, VPN</td>
+                            <td>Advanced Firewalls, IDS/IPS, Routing</td>
+                            <td>Pursue CCNA / CompTIA Network+ certification</td>
+                        </tr>
+                        <tr>
+                            <td>Operating Systems</td>
+                            <td>Windows & Linux Basics</td>
+                            <td>System Admin & Security Hardening</td>
+                            <td>Take Microsoft Certified / Linux+ courses</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Tools Used -->
+        <section id="tools">
+            <h2>Tools & Monitoring</h2>
+            <div class="grid">
+                <div class="card">
+                    <i class="fas fa-search-plus" style="color:var(--primary-color)"></i>
+                    <h3>Wireshark</h3>
+                    <p>For deep packet analysis and troubleshooting network-level issues.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-chart-line" style="color:var(--primary-color)"></i>
+                    <h3>Prometheus & Grafana</h3>
+                    <p>For monitoring system metrics and visualizing real-time performance data.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-satellite-dish" style="color:var(--primary-color)"></i>
+                    <h3>Paessler PRTG</h3>
+                    <p>Comprehensive network monitoring and bandwidth analysis for Windows environments.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certs">
+            <h2>Professional Certifications</h2>
+            <div class="card" style="text-align: center;">
+                <span class="cert-badge">CompTIA A+</span>
+                <span class="cert-badge">Google IT Support Professional</span>
+                <span class="cert-badge">IBM IT Support</span>
+                <span class="cert-badge">CompTIA Security+</span>
+                <span class="cert-badge">Google Cybersecurity</span>
+                <span class="cert-badge">Cisco CCNA Security (In Progress)</span>
+            </div>
+        </section>
+
+        <!-- Career Timeline -->
+        <section id="timeline">
+            <h2>5-Year Career Roadmap</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <strong>Years 1–2: Foundation</strong>
+                    <p>Build a solid foundation with Security+, Network+, and core monitoring tools (Wireshark, Grafana).</p>
+                </div>
+                <div class="timeline-item">
+                    <strong>Years 3–4: Advancement</strong>
+                    <p>Achieve CCNA, AWS Security, and gain SIEM experience while beginning to mentor junior staff.</p>
+                </div>
+                <div class="timeline-item">
+                    <strong>Year 5: Specialization</strong>
+                    <p>Specialize as an IT Security Support Lead with CEH (Certified Ethical Hacker) certification.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Dell -->
+        <section id="target">
+            <h2>Career Goal: Dell Cyberjaya</h2>
+            <div class="card" style="background-color: #e3f2fd; border-left: 5px solid var(--primary-color);">
+                <p>"I want to work for Dell Cyberjaya because it is a global leader in technology solutions with a strong commitment to cybersecurity. I see this as the perfect platform to contribute my skills in proactive monitoring and security awareness while learning from industry experts in a world-class environment."</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 IT Support & Security E-Portfolio | Contact me at [Your Email Address]</p>
+        </div>
+    </footer>
+
+</body>
+</html>
