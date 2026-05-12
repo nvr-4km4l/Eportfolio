@@ -154,6 +154,23 @@
             top: 5px;
         }
 
+        .profile-container img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%; /* jadi bulat */
+    border: 4px solid #ffffff; /* border putih */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* bayang lembut */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.profile-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
         /* --- Footer --- */
         footer {
             background: var(--dark-color);
