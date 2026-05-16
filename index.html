@@ -165,6 +165,23 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.cert-btn{
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    background: #0077ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.cert-btn:hover{
+    background: #0056b3;
+    transform: translateY(-3px);
+}
+
 /* Hover effect */
 .profile-container img:hover {
     transform: scale(1.05);
@@ -300,13 +317,16 @@
         <!-- Certifications -->
         <section id="certs">
             <h2>Professional Certifications</h2>
+
             <div class="card" style="text-align: center;">
-                <span class="cert-badge">CompTIA A+</span>
-                <span class="cert-badge">Google IT Support Professional</span>
-                <span class="cert-badge">IBM IT Support</span>
-                <span class="cert-badge">CompTIA Security+</span>
-                <span class="cert-badge">Google Cybersecurity</span>
-                <span class="cert-badge">Cisco CCNA Security (In Progress)</span>
+
+                <a href="img/" target="_blank" class="cert-btn">
+                    CompTIA A+
+                </a>
+                <a href="img/ccna-security.pdf" target="_blank" class="cert-btn">
+                    Cisco CCNA Security
+                </a>
+
             </div>
         </section>
 
